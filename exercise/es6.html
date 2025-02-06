@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ES6 코드</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.css"
+    />
+    <script defer src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/plugins/line-numbers/prism-line-numbers.min.js"></script>
+  </head>
+  <body>
+    <a href="index.html" class="home-btn">🏠 홈</a>
+    <div class="theme-switch">
+      <label class="switch">
+        <input type="checkbox" id="theme-toggle" />
+        <span class="slider"></span>
+      </label>
+      <span>🌙 다크 모드</span>
+    </div>
+
+    <div class="container">
+      <h1>ES6 코드 실행</h1>
+      <p>
+        ES6 문법을 사용한 코드입니다. 구버전 브라우저에서는 실행되지 않을 수
+        있습니다.
+      </p>
+
+      <pre class="code-box line-numbers"><code class="language-javascript">
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        return `안녕하세요, 저는 ${this.name}입니다. 나이는 ${this.age}살이에요.`;
+    }
+}
+
+const person = new Person("홍길동", 25);
+document.getElementById("output").innerText = person.greet();
+        </code></pre>
+
+      <div class="output-container">
+        <div class="output-title">출력 결과</div>
+        <div id="output" class="output-box"></div>
+      </div>
+    </div>
+
+    <script>
+      class Person {
+        constructor(name, age) {
+          this.name = name;
+          this.age = age;
+        }
+
+        greet() {
+          return `안녕하세요, 저는 ${this.name}입니다. 나이는 ${this.age}살이에요.`;
+        }
+      }
+
+      const person = new Person("홍길동", 25);
+      document.getElementById("output").innerText = person.greet();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+# Node.js 기본 무시 파일
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Babel 빌드 결과물 (컴파일된 JS 파일)
+lib/
+dist/
+build/
+
+# Babel 캐시 파일
+.babelrc.js
+.babelrc.json
+.babelrc
+babel.config.js
+babel.config.json
+.cache/
+
+# 환경 변수 파일 (보안)
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# IDE 및 OS 관련 무시 파일
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# 로그 및 디버깅 관련
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Jest 및 테스트 환경
+coverage/
+jest-cache/
+jest-output/
+
+# ESLint & Prettier 관련
+.eslintcache
+.prettiercache
+
+# TypeScript (선택적, TS 사용 시)
+*.tsbuildinfo
